@@ -1,0 +1,10 @@
+backports-abc==0.4
+beautifulsoup4==4.5.1
+Django==1.10.2
+django-livereload-server==0.2.3
+django-webpack-loader==0.3.3
+djangorestframework==3.4.7
+djangorestframework-jwt==1.8.0
+PyJWT==1.4.2
+six==1.10.0
+tornado==4.4.2
