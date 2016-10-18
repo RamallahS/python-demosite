@@ -5,6 +5,7 @@ django-livereload-server==0.2.3
 django-webpack-loader==0.3.3
 djangorestframework==3.4.7
 djangorestframework-jwt==1.8.0
+gunicorn==19.6.0
 PyJWT==1.4.2
 six==1.10.0
 tornado==4.4.2
