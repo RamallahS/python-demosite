@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
     'docutils',
-    'debug_toolbar'
+    'debug_toolbar',
+    'openapi'
 ]
 
 MIDDLEWARE = [

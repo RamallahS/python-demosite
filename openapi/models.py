@@ -1,3 +1,15 @@
 from django.db import models
 
-# Create your models here.
+
+class BlogEntry(models.Model):
+    """
+    Hahaha
+    """
+    a = 1
+
+    def publish(self):
+        """
+        sdlfsdlfkjsdlfksdflkj
+        :return:
+        """
+        pass
