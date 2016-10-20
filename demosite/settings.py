@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admindocs',
+    'docutils',
     'debug_toolbar'
 ]
 
@@ -77,7 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'python_db',
         'USER': 'root',
-        'PASSWORD': '1'
+        'PASSWORD': '1',
+        'CONN_MAX_AGE': 20
     }
 }
 

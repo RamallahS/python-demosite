@@ -24,6 +24,7 @@ if settings.DEBUG:
 
     urlpatterns += [
         url(r'^__debug__/', include(debug_toolbar.urls)),
+        url(r'^admin/doc/', include('django.contrib.admindocs.urls'))
     ]
 
 urlpatterns += [
