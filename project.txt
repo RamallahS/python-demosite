@@ -1,0 +1,140 @@
+Администратор:
+    Страницы:
+        №1 Дашборд
+        №2 CRUD Подрядчики
+
+    Вопросы:
+        1. Уточнить юзерстори. Изначально доступ к сайту имеет только администратор.
+           Администратор регистрирует компанию-подрядчика и они только тогда получают доступ к своему рабочему пространству?
+           Подрядчики регистрируют своих продавцов и только тогда продавцы получают доступ?
+        2. Администратор должен иметь все возможности по сайту? (редактирование компаний/работа с предложениями и пр)
+        3. Предлагаю внедрить impersonate, что позволит администратору логиниться как любой пользователь и иметь доступ к его функционалу для редактировани данных/отвлеживания процесса и пр.
+        4. Вопрос о permission. Пожете предоставить список возможных органичений?
+
+Подрядчик:
+    Страницы:
+        №1 Дашборд
+        №2 Иформация о компании +редактирование
+        №3 CRUD персонала/продавцов компании
+        №4 CRUD продуктов
+        №5 Информация о подписке и оплата.
+
+Продавцы:
+    Страницы:
+        №0 Дашборд
+        №1 Главная  - просмотр и выбор категории для работы. Линк на страницу №2
+        №2 Список продуктов - список продуктов с отображением доп атрибутов (гарантия, брошюра, изображение...) Линк №3
+        №3 Страница калькуляции работы - форма выбора параметров. Линк №4
+        №4 Обработка инвойса
+        №5 Работа с клиентами (создание/заметки
+        №6 Работа с инвойсами
+        №7 Отчеты
+
+MILESTONES:
+    №1
+    - Общая архитектура проекта (модули/база данных/...)
+    - Базовая верстка
+    - Авторизация/группы.
+    - Панель администратора.
+    - Создание основного функционала для Contractors (company info, products...)
+
+    №2
+    - расширение функционала Contractors (sales person, contracts)
+    - Sales person Dashboard
+    - Add new customer into CRM / notes
+    - Calculating tool
+
+    №3
+    - Orders, Invoices
+    - Discount system
+    - Билинг для contractors
+    - Интеграция платежных систем
+    - Permission for sales persons
+
+    №4
+    - tracker-tickler system
+    - reports
+    - bug fixing
+    - add PDF broshures
+
+
+- application and database architecture + templates slicing - 40h
+- administration module - 40h
+- contractors module - ~50 - 60h
+- salespersons - ~50 - 60h
+- module for managing products (settings/filtering/categories) - 40h
+- order + invoices - ~40h
+- Testing/bug-fixing - 20 - 40h
+
+
+
+
+Формы:
+ - продукты: категория/название/атрибуты(гарантия, брошюра, изображение...)
+
+Справочники:
+- категории продуктов (это будет простой список или дерево?)
+- типы продуктов
+
+
+
+- дашборд
+
+
+
+
+
+1. >> Contractor office - Add or change product pricing
+Contractor будет сам назначать свои собственные цены на каждый из продуктов? Или эти цены будут как-то регулироваться администратором сайта?
+
+2. >> Contractor office - Manage permissions
+Не могли бы вы уточнить какие permissions будут для пользовательских ролей? Будут ли еще роли пользователей, кроме contrator & sales person?
+
+3. >> Contractor office - Reports
+В каком формате должны быть реализованны reports? Нужно разъяснение по этому блоку функционала.
+
+4. >> Contractor office - CRM management
+Какой функционал для менеджмента будет для этого блока?
+
+5. >> Contractor office - Set up/manage accounts for salesperson
+Правильно ли я понимаю, что salespersons будут создаваться напрямую contractor'ом, но не будут иметь возможность зарегистрироваться как отдельные пользователи, что бы contractor смог назначить для себя salesperson из существующего списка?
+
+6. >> Access to monthly subscription payment method
+Какие платежные системы в планируете интегрировать для своего проекта? PayPal, Stripe, etc.
+
+7. >> Contractor sales person - Add new customer into CRM
+Будут ли customers реальными пользователями на сайте, или это виртуальные сущности для информации?
+
+8. >> Appointment tracker-tickler system
+Нужно разъяснение, что вы понимаете под "tracker-tickler system"?
+
+9. В описании я не нашел пунктов для администрирования сайта. Планируете ли вы добавлять админ-панель для управления сайтом?
+
+10. Возможно мне было бы удобнее оценивать сложность и временные рамки проекта, если бы вы предоставили мне существующие wireframes & mockups
+1- The initial setup for products and pricing will be me. After that we will train the contractor on how to add products and change any pricing.
+
+2- Three user roles. 1-Me, to add new contractors and set them up. 2- The contractors office, who has full access to everything. 3- The contractors salesperson, who will be able to create new bids with the pricing tool, add or make comments to the CRM, and see appointments on a calendar.
+
+3- Reports will be in phase 2. They will be sales reports mainly.
+
+4- Basic CRM features, name, address, phone, notes section, status, next action.
+
+5- I am not totally understanding your question. The salesperson is setup by the contractor. The salesperson has limited permissions. Only to create bids with the bidding calculator, add people to the crm, make notes on the crm, view calendar for appointments. If the contractor has more than one salesperson, they will be able to assign a customer lead to a specific sales person.
+
+6-I am still evaluating the subscription payment method. I am considering Paypal, Amazon, or my own merchant account.
+
+7-The contractors customers will not have access to the site.
+
+8-This is a method for adding a "next action" on the calendar. If the prospect says "I am not ready to order now, call me in two weeks" we then put a note on his file to remind us to call him in two weeks.
+
+9- See my comments on #2.
+
+10- I am working on them today.
+
+
+
+
+---
+15000 / 17000
+
+подшива 5200
